@@ -8,6 +8,7 @@ dotenv.config();
 const app= express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+mongodb+srv://garvit:garvit8708@cluster0.sxbpl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/SarthiAyurvedaProject', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
